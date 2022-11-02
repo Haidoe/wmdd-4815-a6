@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&family=Saira+Condensed:wght@500&display=swap");
+
+html {
+  line-height: 1.5;
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Saira Condensed", serif;
+  color: #d90429;
+  margin: 0;
+}
+
+header {
+  background-color: #edf2f4;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+header p {
+  text-align: right;
+  color: #2b2d42;
+  margin: 0;
+}
+
+main,
+footer {
+  background-color: #2b2d42;
+}
+
+.container {
+  padding: 1rem;
+}
+
+section {
+  background-color: #edf2f4;
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 3px dotted #8d99ae;
+  border-bottom: 3px dotted #8d99ae;
+  margin-bottom: 2rem;
+}
+
+input,
+label,
+select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input,
+select,
+fieldset,
+textarea {
+  margin-bottom: 1rem;
+  line-height: 2;
+}
+
+.btn {
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #2b2d42;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  color: #2b2d42;
+}
+
+.submit-btn:active {
+  background-color: #8d99ae;
+  color: #fff;
+}
+
+.reset-btn {
+  color: #2b2d42;
+}
+
+.reset-btn:hover {
+  background-color: #d90429;
+  border-color: #d90429;
+  color: #fff;
+}
+
+.reset-btn:active {
+  background-color: #fff;
+  border-color: #fff;
+  color: #d90429;
+}
+
+fieldset label,
+fieldset input {
+  display: inline-block;
+  width: auto;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: mediumvioletred;
+  outline: mediumvioletred 3px solid;
+}
+
+footer {
+  padding-bottom: 3rem;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  header,
+  header p {
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 4.5rem;
+    padding: 3rem 0;
+    margin: 0;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  section {
+    padding-bottom: 0;
+  }
+
+  label {
+    text-align: right;
+    padding-right: 1rem;
+  }
+
+  fieldset {
+    grid-column: 2;
+  }
+
+  fieldset label {
+    padding-right: 0;
+  }
+
+  fieldset input {
+    margin-right: 1rem;
+  }
+
+  .action-btns {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+    width: 30%;
+  }
+
+  .submit-btn {
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast Finder</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>A-6: Podcast Finder</h1>
+    <p>Created by Tomoko Okochi</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <section>
+        <h2>Find a Podcast</h2>
+
+        <form action="https://www.listennotes.com/search" method="get">
+          <label for="keyword">Keyword:</label>
+          <input type="text" id="keyword" name="q" required>
+
+          <label for="podcast-type">Type:</label>
+          <select name="scope" id="podcast-type">
+            <option selected disabled value="null"> Select Type </option>
+            <option value="episode">Episode</option>
+            <option value="podcast">Podcast</option>
+            <option value="curated">Curated</option>
+          </select>
+
+          <label for="podcast-min">Minimum Length(min):</label>
+          <input type="number" min="0" id="podcast-min" name="len_min">
+
+          <label for="podcast-max">Maximum Length(min):</label>
+          <input type="number" min="1" max="30" id="podcast-max" name="len_max">
+
+          <label for="language">Language:</label>
+          <input type="text" id="language">
+
+          <fieldset>
+            <legend>Sort by date?</legend>
+
+            <label for="sort-yes">Yes</label>
+            <input id="sort-yes" type="radio" name="sort_by_date" value="1">
+
+            <label for="sort-no">No</label>
+            <input id="sort-no" type="radio" name="sort_by_date" value="0">
+          </fieldset>
+
+          <div class="action-btns">
+            <input type="submit" class="btn submit-btn" value="Search">
+            <input type="reset" class="btn reset-btn" value="Clear">
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2>Contact Us</h2>
+
+        <form action="#" method="post">
+
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" required>
+
+          <label for="first-name">Last Name:</label>
+          <input type="text" id="last-name">
+
+          <label for="email-address">Email Address:</label>
+          <input type="email" id="email-address">
+
+          <label for="age">Age:</label>
+          <select name="age" id="age">
+            <option selected disabled>Select your age</option>
+            <option value="under20">Under 20</option>
+            <option value="20-29">20 - 29</option>
+            <option value="30-39">30 - 39</option>
+            <option value="40-49">40 - 49</option>
+            <option value="50-59">50 - 59</option>
+            <option value="60-69">60 - 69</option>
+            <option value="70-79">70 - 79</option>
+            <option value="80AndUp">80 and up</option>
+          </select>
+
+          <fieldset>
+            <legend>Categories you are interested in:</legend>
+            <label for="true-crime">True Crime</label>
+            <input type="checkbox" name="trueCrime" id="true-crime" value="true">
+
+            <label for="news">News</label>
+            <input type="checkbox" name="news" id="news" value="true">
+
+            <label for="comedy">Comedy</label>
+            <input type="checkbox" name="comedy" id="comedy" value="true">
+
+            <label for="it">IT</label>
+            <input type="checkbox" name="it" id="it" value="true">
+          </fieldset>
+
+          <label for="feedback">Your feedback to our service:</label>
+          <textarea name="feedback" id="feedback"></textarea>
+
+          <div class="action-btns">
+            <input type="submit" class="btn submit-btn" value="Send">
+            <input type="reset" class="btn reset-btn" value="Clear">
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2022 Podcast Fun
+  </footer>
+</body>
+
+</html>
